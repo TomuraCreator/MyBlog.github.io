@@ -1,3 +1,101 @@
+
+@font-face {
+	font-family: "Myriad light";
+	src: url("../fonts/myriadpro-light.otf"); 
+}
+@font-face {
+	font-family: "Myriad bs";
+	src: url("../fonts/myriadpro-blacksemicn.otf");
+}
+@font-face {
+	font-family: "Myriad bold";
+	src: url("../fonts/myriadpro-bold.otf");
+}
+html {
+	font-size: 9px;
+}
 body {
-	background-color: lightgrey;
+	width: 100vw;
+	height: 100vw;
+	max-height:450px;
+}
+header {
+	width: 100%;
+	height: 100%;
+}
+.wrapper-circle {
+	width: 100%;
+	max-width: 450px;
+	height: 100%;
+	max-height: 450px;
+	display: flex;
+	flex-direction: column;
+}
+.circle-white {
+	width: 48%;
+	height: 48%;
+	border: 1px solid #3d6cb0;
+	border-radius: 50%;
+	display: flex;
+	margin: 4% auto 2%;
+}
+.circle-blue {
+    width: 85%;
+	height: 85%;
+	background-color: #3d6cb0;
+	border-radius: 50%;
+	margin: auto;
+}
+.name, .soname, .the_post {
+	width: 60%;
+	height: 9%;
+	margin: 0px auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Myriad bold" monospace;
+}
+.name, .soname {
+	font-size: 4.65rem;
+}
+.the_post {
+	font-size: 2.12rem;
+	font-weight: 600;
+	margin: 10px auto;
+}
+.name {
+	font-weight: 100;
+	font-family: "Myriad light" monospace;
+}
+
+/*** profile */ 
+
+.profile-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 40px;
+}
+.profile-wrapper span {
+	height: 5px;
+	width: calc(100% - 145px);
+	background-color: #3d6cb0;
+	margin: 0;
+	align-self: center;
+}
+.head__title {
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-family: "Myriad bold";
+	width: contain;
+	color: #3d6cb0;
+	margin: 0;
+	align-self: center;
+}
+.profile__describe > span {
+	font-weight: bold;
+}
+.profile__describe {
+	font-family: "Myriad light", ;
+	font-size: 2rem;
+	margin-top: 5px;
 }
