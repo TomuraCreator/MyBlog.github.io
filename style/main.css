@@ -61,7 +61,7 @@ section, header {
 	margin: 0px auto;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: "Myriad bold" monospace;
+	font-family: "Myriad bold", monospace;
 }
 .name, .soname {
 	font-size: 4.65rem;
@@ -73,7 +73,7 @@ section, header {
 }
 .name {
 	font-weight: 100;
-	font-family: "Myriad light" monospace;
+	font-family: "Myriad light", monospace;
 }
 
 /*** profile */ 
@@ -81,18 +81,20 @@ section, header {
 .profile-wrapper {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	width: 98%;
 	max-width: 450px;
 	height: 40px;
+	margin: 10px 0;
 }
 .profile__describe {
 	width: 100%;
-	max-width: 430px;
+	max-width: 450px;
 	padding-right: 10px;
+	padding-left: 10px;
 	box-sizing: border-box;
 }
 .profile-wrapper span {
-	height: 5px;
+	height: 3px;
 	width: 100%;
 	background-color: #3d6cb0;
 	margin: 0;
@@ -116,25 +118,26 @@ section, header {
 	margin-top: 5px;
 }
 /*contact link*/
+
 .contact-link {
 	width: 65%;
 }
 .contact-link > p {
 	width: 40%;
 	display: inline-block;
-	font-family: "Myriad light", monospase;
+	font-family: "Myriad bold", monospase;
 	font-size: 2rem;
 	text-transform: uppercase;
-	font-weight: 600;
 	color: #3d6cb0;
 	margin: 10px auto;
 	
 }
 .contact-link > address, a {
-	width: 40%;
+	width: 60%;
 	display: inline-block;
 	font-family: "Myriad light", monospace;
 	font-size: 2rem;
+	font-style: normal;
 	text-decoration: none;
 	color: #000;
 	}
@@ -143,8 +146,8 @@ section, header {
 	.skills {
 		font-size: 2.5rem;
 		text-transform: uppercase;
-		font-family:  "Myriad light", monospace;
-		font-weight: bold;
+		font-family:  "Myriad bold", monospace;
+		font-weight: 300;
 		text-align:center;
 		margin: 3px auto;
 	}
@@ -181,13 +184,12 @@ section, header {
 .education__podcast_job h4 {
 	font-size: 2.5rem;
 	width: contain;
+	color: #3d6cb0;
 	text-transform: uppercase;
 	display: inline-block;
 	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-weight: 900;
-	font-family:  "Myriad light", monospace;
+    margin: 0 10px 0 0;
+	font-family:  "Myriad bold", monospace;
 }
 .education__podcast_job div {
 	width: calc(100% - 45px);
@@ -210,4 +212,90 @@ section, header {
 	font-family:  "Myriad light", monospace;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	text-transform: uppercase;
+}.education__podcast_job p {
+	font-size: 2rem;
+	font-family:  "Myriad light", monospace;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+@media (orientation: landscape) {
+    .education__podcast_job span:before {
+		content: "\002F" "\002F";
+		margin-right: 5px;
+	}
+}
+
+/*experience */
+
+.expirience__podcast-exp {
+	height: contain;
+}
+.expirience__podcast-exp h4 {
+	font-size: 2.5rem;
+	width: contain;
+	color: #3d6cb0;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 10px;
+    margin: 0 10px 0 0;
+	font-family:  "Myriad bold", monospace;
+}
+.expirience__podcast-exp div {
+	width: calc(100% - 45px);
+	margin: 0 auto; 
+}
+
+/*svg*/
+
+.expirience__podcast-exp svg {
+	width: 25px;
+	height: 15px;
+	margin-left: -30px;
+	margin-right: 5px
+}
+/**/
+.expirience__podcast-exp span {
+	font-size: 2.5rem;
+	display: inline-block;
+	font-family:  "Myriad light", monospace;
+}
+.expirience__podcast-exp h5 {
+	font-size: 2.5rem;
+	font-family:  "Myriad light", monospace;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.expirience__podcast-exp p {
+	font-size: 2rem;
+	font-family:  "Myriad light", monospace;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+@media (orientation: landscape) {
+    .expirience__podcast-exp span:before {
+		content: "\002F" "\002F";
+		margin-right: 5px;
+	}
+}
+
+/*software*/
+
+.software__block img {
+	width: 67%;
+	height: 20px;
+	display: block;
+	margin: 0 auto;
+}
+.software__block h4 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-family:  "Myriad bold", monospace;
+	font-weight: 300;
+	text-align: center;
+	margin: 15px 0 auto;
+}
+.software {
+	height: 480px;
 }
