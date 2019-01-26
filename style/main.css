@@ -16,26 +16,37 @@ html {
 }
 body {
 	width: 100vw;
-	height: 100vw;
-	max-height:450px;
 }
 header {
 	width: 100%;
+	max-width: 500px;
 	height: 100%;
+	margin: 0 auto;
 	min-height: 270px;
+	max-height: 400px;
 }
-section, header {
+section {
 	width: 100%;
-	max-width: 450px;
+	max-width: 500px;
 	margin: 0 auto;
 	min-width: 300px;
+	box-sizing: border-box;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.image__head {
+	width: 60px;
+	height: 60px;
+	margin-top: -10px;
+	margin-right: 2%;
+	display: none;
 }
 .wrapper-circle {
 	width: 100%;
 	max-width: 450px;
 	min-width: 320px;
 	height: 100%;
-	max-height: 450px;
+	max-height: 500px;
 	min-height: 320px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -45,22 +56,9 @@ section, header {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
-.circle-white {
+.wrapper__circle-image {
 	width: 48%;
-	height: 48%;
-	border: 1px solid #3d6cb0;
-	border-radius: 50%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 4% auto 2%;
-}
-.circle-blue {
-    width: 85%;
-	height: 85%;
-	background-color: #3d6cb0;
-	border-radius: 50%;
-	margin: auto;
+	margin: 0 auto;
 }
 .name, .soname, .the_post {
 	width: 90%;
@@ -94,13 +92,12 @@ section, header {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	width: 98%;
-	max-width: 450px;
 	height: 40px;
 	margin: 10px 0;
 }
 .profile__describe {
 	width: 100%;
-	max-width: 450px;
+	padding-top: 1.5%;
 	padding-right: 10px;
 	padding-left: 10px;
 	-webkit-box-sizing: border-box;
@@ -130,7 +127,7 @@ section, header {
 	font-weight: bold;
 }
 .profile__describe {
-	font-family: "Myriad light", ;
+	font-family: "Myriad light", monospace;
 	font-size: 2rem;
 	margin-top: 5px;
 }
@@ -160,15 +157,15 @@ section, header {
 	}
 
 	/*skills*/ 
-	.skills {
+.skills {
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		font-family:  "Myriad bold", monospace;
 		font-weight: 300;
 		text-align:center;
-		margin: 3px auto;
+
 	}
-	.wrapper-skills > span {
+.wrapper-skills > span {
 		display: inline-block;
 		width: 15px;
 		height: 15px;
@@ -178,19 +175,19 @@ section, header {
 		background-color: #e6e6e6;
 	}
 	/* teamwork*/
-	.wrapper_teamwork > span:nth-child(-n+12) {
+.wrapper_teamwork > span:nth-child(-n+12) {
 		background-color: #3d6cb0;
 	}
 	/* creative*/
-	.wrapper_creative > span:nth-child(-n+10) {
+.wrapper_creative > span:nth-child(-n+10) {
 		background-color: #3d6cb0;
 	}
 	/* innovate*/
-	.wrapper_innovate > span:nth-child(-n+7) {
+.wrapper_innovate > span:nth-child(-n+7) {
 		background-color: #3d6cb0;
 	}
 	/* communication*/
-	.wrapper_communication > span:nth-child(-n+12) {
+.wrapper_communication > span:nth-child(-n+12) {
 		background-color: #3d6cb0;
 	}
 
@@ -216,6 +213,7 @@ section, header {
 .education__podcast_job svg {
 	width: 25px;
 	height: 15px;
+	padding-top: 3%;
 	margin-left: -30px;
 	margin-right: 5px
 }
@@ -247,6 +245,7 @@ section, header {
 
 .expirience__podcast-exp {
 	height: contain;
+	padding-top: 3%;
 }
 .expirience__podcast-exp h4 {
 	font-size: 2.5rem;
@@ -315,4 +314,53 @@ section, header {
 }
 .software {
 	height: 480px;
+}
+
+/* > 600px  < 900px*/
+
+@media (min-width: 600px) and (max-width: 900px){
+	html {
+		font-size: 9px;
+	}
+	body {
+		margin: 0 auto;
+	}
+	section, header {
+	    padding-right: 1%;
+	    padding-left: 1%;
+	    }
+	.wrapper-circle {
+		margin: 0 auto;
+	}
+
+	.image__head {
+		display: block;
+	}
+}
+
+
+
+@media (min-width: 901px) {
+	html {
+		font-size: 6px;
+	}
+	body {
+		width: 98%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	section, header {
+		margin: 0;
+        width: 48%;
+        height: contain;
+	    padding-right: 1%;
+	    padding-left: 1%;
+	    }
+	.image__head {
+		display: block;
+		}
+
 }
