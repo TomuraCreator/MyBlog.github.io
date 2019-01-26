@@ -37,14 +37,21 @@ section, header {
 	height: 100%;
 	max-height: 450px;
 	min-height: 320px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .circle-white {
 	width: 48%;
 	height: 48%;
 	border: 1px solid #3d6cb0;
 	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 4% auto 2%;
 }
@@ -79,8 +86,13 @@ section, header {
 /*** profile */ 
 
 .profile-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	width: 98%;
 	max-width: 450px;
 	height: 40px;
@@ -91,14 +103,17 @@ section, header {
 	max-width: 450px;
 	padding-right: 10px;
 	padding-left: 10px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .profile-wrapper span {
 	height: 3px;
 	width: 100%;
 	background-color: #3d6cb0;
 	margin: 0;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
 .head__title {
 	font-size: 4rem;
@@ -107,7 +122,9 @@ section, header {
 	width: contain;
 	color: #3d6cb0;
 	margin: 0;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
 .profile__describe > span {
 	font-weight: bold;
