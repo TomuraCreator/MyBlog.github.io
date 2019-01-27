@@ -312,10 +312,6 @@ section {
 	text-align: center;
 	margin: 15px 0 auto;
 }
-.software {
-	height: 480px;
-}
-
 /* > 600px  < 900px*/
 
 @media (min-width: 600px) and (max-width: 900px){
@@ -345,8 +341,11 @@ section {
 		font-size: 6px;
 	}
 	body {
-		width: 98%;
+		width: 90%;
+		height: 1350px;
 		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 1%;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -354,7 +353,7 @@ section {
 	}
 	section, header {
 		margin: 0;
-        width: 48%;
+        width: 50%;
         height: contain;
 	    padding-right: 1%;
 	    padding-left: 1%;
@@ -362,5 +361,18 @@ section {
 	.image__head {
 		display: block;
 		}
-
+    .wrapper__software_block {
+    	height: 200px;
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	align-items: flex-start;
+    }
+    .software__block {
+    	width: 50%;
+    }
+    .expirience__podcast-exp span:before, .education__podcast_job span:before {
+		content: "\002F" "\002F";
+		margin-right: 5px;
+	}
 }
